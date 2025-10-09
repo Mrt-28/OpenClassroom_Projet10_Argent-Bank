@@ -9,10 +9,10 @@ importers:
   .:
     dependencies:
       axios:
-        specifier: ^1.12.2
-        version: 1.12.2
+        specifier: ^0.30.2
+        version: 0.30.2
       bcrypt:
-        specifier: ^5.0.0
+        specifier: ^5.1.1
         version: 5.1.1
       cors:
         specifier: ^2.8.5
@@ -21,7 +21,7 @@ importers:
         specifier: ^17.2.3
         version: 17.2.3
       express:
-        specifier: ^4.17.1
+        specifier: ^4.21.2
         version: 4.21.2
       jsonwebtoken:
         specifier: ^9.0.2
@@ -94,8 +94,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.12.2:
-    resolution: {integrity: sha512-vMJzPewAlRyOgxV2dU0Cuz2O8zzzx9VYtbJOaBgXFeLc4IV/Eg50n4LowmehOOR61S8ZMpc2K5Sa7g6A4jfkUw==}
+  axios@0.30.2:
+    resolution: {integrity: sha512-0pE4RQ4UQi1jKY6p7u6i1Tkzqmu+d+/tHS7Q7rKunWLB9WyilBTpHHpXzPNMDj5hTbK0B0PTLSz07yqMBiF6xg==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -867,7 +867,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.12.2:
+  axios@0.30.2:
     dependencies:
       follow-redirects: 1.15.11
       form-data: 4.0.4
