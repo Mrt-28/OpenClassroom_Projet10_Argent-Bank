@@ -1,0 +1,82 @@
+
+# Logs
+Backend/logs
+Backend/*.log
+Backend/npm-debug.log*
+Backend/yarn-debug.log*
+Backend/yarn-error.log*
+Backend/pnpm-debug.log*
+Backend/lerna-debug.log*
+Frontend/logs
+Frontend/*.log
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/pnpm-debug.log*
+Frontend/lerna-debug.log*
+
+# Dependency directories
+Backend/node_modules/
+Backend/.yarn/
+Backend/.pnp/
+Backend/.pnp.js
+Frontend/node_modules/
+Frontend/.yarn/
+Frontend/.pnp/
+Frontend/.pnp.js
+
+# Build output
+Backend/dist/
+Backend/dist-ssr/
+Backend/build/
+Backend/*.local
+Frontend/dist/
+Frontend/dist-ssr/
+Frontend/build/
+Frontend/*.local
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# pnpm/yarn/yalc
+Backend/.yalc/
+Backend/yalc.lock
+Backend/.pnpm-debug.log
+Frontend/.yalc/
+Frontend/yalc.lock
+Frontend/.pnpm-debug.log
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# MongoDB data
+Backend/mongo-data/
+Backend/mongo-logs/
+Backend/mongosh-2.1.1-linux-x64/
+Backend/mongosh-2.1.1-linux-x64.tgz/
+
+# Docker
+Backend/docker-compose.override.yml
+Backend/.env
+Backend/.env.local
+Backend/.env.*.local
+
+# Test coverage
+Backend/coverage/
+Backend/.nyc_output/
+Frontend/coverage/
+Frontend/.nyc_output/
+
+# TypeScript
+Backend/*.tsbuildinfo
+Frontend/*.tsbuildinfo
