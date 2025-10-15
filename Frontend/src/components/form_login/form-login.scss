@@ -1,0 +1,39 @@
+.login {
+    box-sizing: border-box;
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 2rem;
+
+    &__icon{
+        width: 1.3em;
+    }
+
+    &__form{
+        &__container{
+            &__text{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                margin-bottom: 1rem;
+
+                &__label{
+                    font-weight: bold;
+                }
+
+                &__input{
+                    padding: 5px;
+                    font-size: 1.2rem;
+                }
+            }
+            &__checkbox{
+                display: flex;
+
+                &__label{
+                    margin-left: 0.25rem;
+                }
+            }
+        }
+    }
+}

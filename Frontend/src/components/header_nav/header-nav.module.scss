@@ -1,0 +1,24 @@
+.header-nav {
+    &__link {
+
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        font-weight: bold;
+        color: #2c3e50;
+        margin-right: 0.5rem;
+        text-decoration: none;
+
+        &__icon {
+            // TODO: changer en variable
+            width: 1em; /* ou 16px, 24px selon ton design  */ 
+        }        
+/*         &__text {
+        } */
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}

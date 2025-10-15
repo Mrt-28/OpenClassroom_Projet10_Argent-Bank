@@ -3,9 +3,18 @@ import { createRoot } from "react-dom/client" */
 import { Provider } from "react-redux"
 import { App } from "./App"
 import { store } from "./app/store"
-import "./index.css"
+import "./sass/root.scss"
 
-const container = document.getElementById("root")
+import Header from './containers/header/Header';
+import Footer from "./containers/footer/Footer";
+
+import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
+import Account from "./pages/account/Account";
+import Parameters from "./pages/account_parameters/AccountParameters";
+import Transaction from "./pages/account_transaction/AccountTransaction";
+import NotFound from "./pages/not_found/NotFound";
+
 /* 
 if (container) {
   const root = createRoot(container)
@@ -26,19 +35,26 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, Outlet, Navigate } from 'react-router-dom'
 
+const container = document.getElementById("root")
+
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: (
 			<>
+				<Header />
 				<Outlet />
+				<Footer />
 			</>
 		),
 		children: [
-			{ path: '/', element: <App /> },
-			{ path: '/about', element: <App /> },
-			{ path: '/logement/:id', element: <App /> },
-			{ path: '/404', element: <App /> },
+			{ path: '/', element: <Home /> },
+			{ path: '/login', element: <Login /> },
+			{ path: '/account', element: <Account /> },
+			{ path: '/account/parameters', element: <Parameters /> },
+			{ path: '/account/transaction/:id', element: <Transaction /> },
+			{ path: '/app', element: <App /> },
+			{ path: '/404', element: <NotFound /> },
 			{ path: '*', element: <Navigate to="/404" replace /> },
 		],
 	},
